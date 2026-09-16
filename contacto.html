@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto y Matrícula | Academia Exclusiva UNI</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- BARRA SUPERIOR DE CONTACTO -->
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+            <span><i class="fa-brands fa-whatsapp"></i> WhatsApp Informes: 994 726 669</span>
+            <span><i class="fa-solid fa-envelope"></i> informes@exclusivauni.edu.pe</span>
+        </div>
+    </div>
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <header class="header">
+        <div class="container nav-flex">
+            <a href="index.html" class="logo-container">
+                <img src="IMG/logo.png" alt="Logo Academia Exclusiva UNI" onerror="this.style.display='none'">
+                <span class="logo-text">EXCLUSIVA <span>UNI</span></span>
+            </a>
+            <nav class="navbar" id="navbar">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="ciclos.html">Ciclos</a>
+                <a href="sedes.html">Sedes</a>
+                <a href="contacto.html" class="btn-matricula active">Matrícula en Línea</a>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- CABECERA DE SECCIÓN -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Inscripciones y Contacto</h1>
+            <p>Completa tus datos para matricularte o solicitar información detallada sobre nuestros ciclos.</p>
+        </div>
+    </section>
+
+    <!-- CONTENEDOR DE CONTACTO -->
+    <section class="container content-section">
+        <div class="contacto-grid">
+            
+            <!-- INFORMACIÓN DE CONTACTO -->
+            <div class="contacto-info-box">
+                <h2>Comunícate con Nosotros</h2>
+                <p>Nuestros asesores académicos están listos para resolver todas tus dudas sobre vacantes, horarios y modalidades.</p>
+                
+                <ul class="contacto-datos">
+                    <li>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp Informes</strong>
+                            <span>994 726 669</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <strong>Correo Electrónico</strong>
+                            <span>informes@exclusivauni.edu.pe</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <div>
+                            <strong>Horario de Atención</strong>
+                            <span>Lunes a Sábado: 8:00 a.m. - 8:00 p.m.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- FORMULARIO DE MATRÍCULA -->
+            <div class="contacto-form-box">
+                <h2>Ficha de Inscripción</h2>
+                <form id="form-matricula">
+                    <div class="form-group">
+                        <label for="nombres">Nombres Completos</label>
+                        <input type="text" id="nombres" required placeholder="Ej. Juan Carlos">
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="documento">Tipo de Documento</label>
+                            <select id="documento">
+                                <option value="dni">DNI</option>
+                                <option value="ce">Carnet de Extranjería</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="nro-doc">N° de Documento</label>
+                            <input type="text" id="nro-doc" required placeholder="Número de documento">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="celular">Celular / WhatsApp</label>
+                            <input type="tel" id="celular" required placeholder="999 999 999">
+                        </div>
+                        <div class="form-group">
+                            <label for="ciclo-interes">Ciclo de Interés</label>
+                            <select id="ciclo-interes">
+                                <option value="anual">Ciclo Anual UNI</option>
+                                <option value="semestral">Ciclo Semestral UNI</option>
+                                <option value="repaso">Ciclo Repaso UNI</option>
+                                <option value="escolar">Ciclo Escolar / Pre-UNI</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sede-interes">Sede de Preferencia</label>
+                        <select id="sede-interes">
+                            <option value="comas">Sede Comas</option>
+                            <option value="smp">Sede San Martín de Porres</option>
+                            <option value="sjl">Sede San Juan de Lurigancho</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Enviar Solicitud de Matrícula</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="footer-col">
+                <h3>EXCLUSIVA UNI</h3>
+                <p>La academia preuniversitaria líder dedicada exclusivamente a forjar a los futuros ingenieros del país.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="ciclos.html">Ciclos</a></li>
+                    <li><a href="sedes.html">Sedes</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Síguenos</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Academia Exclusiva UNI. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
